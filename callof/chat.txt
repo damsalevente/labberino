@@ -1,0 +1,134 @@
+#include <iostream>
+#include "weapon.h"
+#include "knife.h"
+#include "pistol.h"
+#include "railgun.h"
+
+/* bemásoltam main.cpp-be és elvileg lefutott jól */
+using namespace std;
+
+int main() {
+
+	Weapon excalibur(100);
+	Knife knife;
+	Pistol pistol;
+	Railgun railgun;
+
+	cout << excalibur.toString() << endl;
+	cout << knife.toString() << endl;
+	cout << pistol.toString() << endl;
+	cout << railgun.toString() << endl;
+
+	cout << endl;
+
+	cout << "Damage caused with excalibur: " << excalibur.use() << endl;
+	cout << "Damage caused with knife: " << knife.use() << endl;
+	cout << "Damage caused with pistol: " << pistol.use() << endl;
+	cout << "Damage caused with railgun: " << railgun.use() << endl;
+
+	knife.sharpen();
+	pistol.reload();
+	railgun.recharge();
+
+	cout << endl;
+
+	cout << excalibur.toString() << endl;
+	cout << knife.toString() << endl;
+	cout << pistol.toString() << endl;
+	cout << railgun.toString() << endl;
+
+	return 0;
+}
+
+test kódja, erre kell majd beközni 
+
+fúj
+hát itt pár elnvezés már rossz :D 
+Railgun helyett plazmát csináltam :D 
+de a toString jó lesz így ahogy látod 
+
+2. CallOfC++: Fegyverek refaktorálása
+Alakítsd át a múlthéten elkészített CallOfC++ osztályokat (megoldást megtalálod a portálon) a következőképp:
+• Oldd meg, hogy a use() és a toString() függvények definícióját minden esetben a leszármazottól vegye a
+program (late binding)
+• A use() és a toString() függvényeknek ne legyen definíciója a Weapon osztályban, hiszen nem szükséges
+• Foglald össze röviden, hogy mit is csináltál az előző két pontban és mi a következmény!
+• Készítsd fel a fegyverek osztályait arra, hogy esetleges dinamikus memóriahasználat esetén minden
+esetben lefussanak a leszármazottak destruktorai. Teszteld is le!
+Ha nem emlékeznél pontosan, hogy melyik függvény mit csinál, nézd meg az előző laborfeladatsort.
+
+:D
+ez a 8. gyak
+
+
+
+nem írtam bele azóta? :D 
+
+
+most minden jó 
+gondolom úgy kell, set_clipsize-nál, nem tudom hogy van-e max value 
+igazából nem fontos 
+toString-eket kéne valahogy formázni mert ez a sok +-ozás elég ocsmány
++ még 
+a
+mi
+k
+et itt írtak azokat most meg kell fontolunk
+de előbb ezt elmentjük mielőtt baj lesz :D 
+
+
+
+futtasd le megint jó e
+oks
+annyit cigánykodtam hogy a neveket átírtam 
+szóval weapon.h helyett Weapon.h van 
+meg Railgun helyett Laesr vagy mi :D 
+
+railgun kéne laser helyett
+az már az érdemi szerző feladata :D 
+én csak a kisegítő vagyok :.D 
+jójó :D 
+még úgy is átfutom az egészet 
+
+mi van még hátra? 
+
+itt ezek a pontok amiet írtak a 8.-iknak
+
+Maradjon holnapra? 
+
+Maradhat de 
+elmondom inkább hogy mit kell csinálni 
+most ugye mindenhol hívjuk az ősosztály use-át 
+ehlyett azt pure virtual functionra kell átírni mutatom a Knife.h-nál
+jjG
+és írja is hogy pure virtual 
+vagyis azt nem tudja futtat ni
+ezután azt kell csinálnod 
+hogy 
+amit eddig a toString meg a use csinált 
+azt mindenhol át copy pastelni 
+szóval knife-nál a weapon::use helyére be kell írnod a damage degradációt 
+ja várj 
+minden amit mondtam a weapon-re nem aknife-railgun
+pistol.cpp use-ban így nézne ki 
+a gettereket és settereket használni 
+ez akkor így stimmel? 
+
+oks holnap én viszonylag ráérek
+de dolgoznom kéne már :D 
+
+aha, de holnap majd még kérdezek
+
+
+11 fele?
+az talán jó 
+10-kor van beszélgetés
+akkor azthiszem órám lesz de 
+nem a világ vége ha válaszolgatok :D 
+akkor holnap ! 
+zipet átküldjem? 
+z
+ip
+
+aha
+légyszi

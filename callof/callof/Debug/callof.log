@@ -1,0 +1,8 @@
+﻿  Source.cpp
+Source.obj : error LNK2019: unresolved external symbol "public: void __thiscall Pistol::reload(void)" (?reload@Pistol@@QAEXXZ) referenced in function _main
+Source.obj : error LNK2001: unresolved external symbol "public: virtual unsigned int __thiscall Pistol::use(void)" (?use@Pistol@@UAEIXZ)
+Source.obj : error LNK2001: unresolved external symbol "public: virtual class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __thiscall Pistol::toString(void)" (?toString@Pistol@@UAE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ)
+Source.obj : error LNK2001: unresolved external symbol "public: virtual unsigned int __thiscall Railgun::use(void)" (?use@Railgun@@UAEIXZ)
+Source.obj : error LNK2019: unresolved external symbol "public: void __thiscall Railgun::recharge(void)" (?recharge@Railgun@@QAEXXZ) referenced in function _main
+Source.obj : error LNK2001: unresolved external symbol "public: virtual class std::basic_string<char,struct std::char_traits<char>,class std::allocator<char> > __thiscall Railgun::toString(void)" (?toString@Railgun@@UAE?AV?$basic_string@DU?$char_traits@D@std@@V?$allocator@D@2@@std@@XZ)
+D:\Letoltes\callof\Debug\callof.exe : fatal error LNK1120: 6 unresolved externals
